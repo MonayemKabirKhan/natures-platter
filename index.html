@@ -4,17 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature's Platter</title>
-    <link rel="stylesheet" href="./styles/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/output.css" />
   </head>
   <body>
-    <header>
-      <button class="">Click Me</button>
+    <header class="bg-linear-180 from-primary to-secondary">
+      <!-- Navbar Start -->
+      <nav
+        class="container flex justify-between items-center mx-auto mb-12 border-[0.5px] border-solid border-accent p-4 sm:py-6 sm:border-none sm:mb-23"
+      >
+        <div class="header-logo w-38 hidden sm:block">
+          <img
+            class="w-full align-middle"
+            src="./assets/logo/logo-header.png"
+            alt="Logo"
+          />
+        </div>
+        <ul class="nav-links hidden sm:flex gap-8">
+          <li>
+            <a class="link sm:!text-xl sm:!leading-6" href="#">Product</a>
+          </li>
+          <li>
+            <a class="link sm:!text-xl sm:!leading-6" href="#">Services</a>
+          </li>
+          <li>
+            <a class="link sm:!text-xl sm:!leading-6" href="#">Contact us</a>
+          </li>
+        </ul>
+        <div class="header-actions hidden sm:flex items-center gap-4">
+          <div class="search w-6">
+            <img
+              class="w-full align-middle"
+              src="./assets/icons/search.png"
+              alt="Search icon"
+            />
+          </div>
+          <div class="cart w-7">
+            <img
+              class="w-full align-middle"
+              src="./assets/icons/cart.png"
+              alt="Cart icon"
+            />
+          </div>
+          <button
+            class="button-secondary sm:!text-xl sm:!leading-6 sm:!px-7 sm:!py-3"
+          >
+            Login
+          </button>
+          <button
+            class="button-primary sm:!text-xl sm:!leading-6 sm:!px-7 sm:!py-3"
+          >
+            Register
+          </button>
+        </div>
+        <div class="header-logo w-12 sm:hidden">
+          <img
+            class="w-full align-middle"
+            src="./assets/logo/logo-without-text.png"
+            alt="Logo"
+          />
+        </div>
+        <div class="menu w-8 sm:hidden">
+          <img
+            class="w-full align-middle"
+            src="./assets/icons/hamburger.png"
+            alt="Menu icon"
+          />
+        </div>
+      </nav>
+      <!-- Navbar End -->
+      <!-- Banner Section Start-->
+      <section
+        class="banner overflow-hidden space-y-4 sm:container sm:mx-auto sm:space-y-8"
+      >
+        <h1
+          class="header-title heading1 text-center px-4 sm:!text-[56px] sm:!leading-18"
+        >
+          Freshness
+          <span class="text-accent"
+            >You Can<br />
+            Count</span
+          >
+          On, Prices You’ll Love!
+        </h1>
+        <p
+          class="header-description paragraph text-text/80 text-center px-4 sm:!text-xl sm:!leading-6"
+        >
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry<br />
+          staples, we’ve got you covered every day!
+        </p>
+        <img
+          class="header-image max-w-[125%] relative left-1/2 transform-[translateX(-50%)] sm:max-w-full"
+          src="./assets/hero-vegetables.png"
+          alt="Vegetables"
+        />
+      </section>
+      <!-- Banner Section End -->
     </header>
     <main></main>
     <footer></footer>
