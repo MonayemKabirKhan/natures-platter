@@ -1,1 +1,63 @@
 @import "tailwindcss";
+
+@theme {
+  /* Font */
+  --font-sora: "Sora", "serif";
+
+  /* Colors */
+  --color-primary: #ffffff;
+  --color-secondary: #efebe3;
+  --color-accent: #179800;
+  --color-text: #111111;
+}
+
+/* Headings */
+.heading1 {
+  @apply text-text font-sora text-[2rem] font-semibold leading-10;
+}
+
+.heading2 {
+  @apply text-accent font-sora text-2xl font-semibold leading-7;
+}
+
+.card1-heading {
+  @apply text-text font-sora text-xl font-semibold leading-6;
+}
+
+.card2-heading {
+  @apply text-primary font-sora text-[1.75rem] font-normal leading-9 bg-green-400;
+}
+
+.card3-heading {
+  @apply text-text font-sora text-xs font-medium leading-4;
+}
+
+.card4-heading {
+  @apply text-primary font-sora text-[1.375rem] font-normal leading-7 bg-green-400;
+}
+
+/* Paragraphs */
+.paragraph {
+  @apply font-sora text-base font-normal leading-5;
+}
+
+.card2-paragraph {
+  @apply text-text/70 font-sora text-sm font-normal leading-4;
+}
+
+/* Buttons */
+.button-primary {
+  @apply text-primary font-sora text-sm font-normal leading-[18px] bg-accent px-6 py-2 border-none rounded-md;
+}
+
+.button-secondary {
+  @apply text-accent font-sora text-sm font-normal leading-[18px] bg-none px-6 py-2 border border-solid border-accent rounded-md;
+}
+
+.button-tertiary {
+  @apply text-text font-sora text-sm font-normal leading-[18px] bg-primary px-6 py-2 border-none rounded-md;
+}
+
+.button-quaternary {
+  @apply text-primary font-sora text-sm font-normal leading-[18px] bg-accent px-4 py-2 border-none rounded-md;
+}

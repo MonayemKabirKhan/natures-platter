@@ -377,6 +377,11 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
+    --font-sora: "Sora", "serif";
+    --color-primary: #ffffff;
+    --color-secondary: #efebe3;
+    --color-accent: #179800;
+    --color-text: #111111;
   }
 }
 @layer base {
@@ -589,9 +594,6 @@
   }
   .isolation-auto {
     isolation: auto;
-  }
-  .z-1 {
-    z-index: 1;
   }
   .z-auto {
     z-index: auto;
@@ -2163,6 +2165,151 @@
     transform-box: view-box;
   }
 }
+.heading1 {
+  font-family: var(--font-sora);
+  font-size: 2rem;
+  --tw-leading: calc(var(--spacing) * 10);
+  line-height: calc(var(--spacing) * 10);
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+}
+.heading2 {
+  font-family: var(--font-sora);
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  --tw-leading: calc(var(--spacing) * 7);
+  line-height: calc(var(--spacing) * 7);
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent);
+}
+.card1-heading {
+  font-family: var(--font-sora);
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+  --tw-leading: calc(var(--spacing) * 6);
+  line-height: calc(var(--spacing) * 6);
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+}
+.card2-heading {
+  background-color: var(--color-green-400);
+  font-family: var(--font-sora);
+  font-size: 1.75rem;
+  --tw-leading: calc(var(--spacing) * 9);
+  line-height: calc(var(--spacing) * 9);
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-primary);
+}
+.card3-heading {
+  font-family: var(--font-sora);
+  font-size: var(--text-xs);
+  line-height: var(--tw-leading, var(--text-xs--line-height));
+  --tw-leading: calc(var(--spacing) * 4);
+  line-height: calc(var(--spacing) * 4);
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+.card4-heading {
+  background-color: var(--color-green-400);
+  font-family: var(--font-sora);
+  font-size: 1.375rem;
+  --tw-leading: calc(var(--spacing) * 7);
+  line-height: calc(var(--spacing) * 7);
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-primary);
+}
+.paragraph {
+  font-family: var(--font-sora);
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-leading: calc(var(--spacing) * 5);
+  line-height: calc(var(--spacing) * 5);
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+}
+.card2-paragraph {
+  font-family: var(--font-sora);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-leading: calc(var(--spacing) * 4);
+  line-height: calc(var(--spacing) * 4);
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: color-mix(in oklab, var(--color-text) 70%, transparent);
+}
+.button-primary {
+  border-radius: var(--radius-md);
+  --tw-border-style: none;
+  border-style: none;
+  background-color: var(--color-accent);
+  padding-inline: calc(var(--spacing) * 6);
+  padding-block: calc(var(--spacing) * 2);
+  font-family: var(--font-sora);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-leading: 18px;
+  line-height: 18px;
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-primary);
+}
+.button-secondary {
+  border-radius: var(--radius-md);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  --tw-border-style: solid;
+  border-style: solid;
+  border-color: var(--color-accent);
+  background-image: none;
+  padding-inline: calc(var(--spacing) * 6);
+  padding-block: calc(var(--spacing) * 2);
+  font-family: var(--font-sora);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-leading: 18px;
+  line-height: 18px;
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-accent);
+}
+.button-tertiary {
+  border-radius: var(--radius-md);
+  --tw-border-style: none;
+  border-style: none;
+  background-color: var(--color-primary);
+  padding-inline: calc(var(--spacing) * 6);
+  padding-block: calc(var(--spacing) * 2);
+  font-family: var(--font-sora);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-leading: 18px;
+  line-height: 18px;
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text);
+}
+.button-quaternary {
+  border-radius: var(--radius-md);
+  --tw-border-style: none;
+  border-style: none;
+  background-color: var(--color-accent);
+  padding-inline: calc(var(--spacing) * 4);
+  padding-block: calc(var(--spacing) * 2);
+  font-family: var(--font-sora);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-leading: 18px;
+  line-height: 18px;
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-primary);
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -2463,6 +2610,10 @@
   inherits: false;
 }
 @property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
