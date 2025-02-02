@@ -3288,6 +3288,11 @@
       }
     }
   }
+  .lg\:\!justify-self-end {
+    @media (width >= 64rem) {
+      justify-self: flex-end !important;
+    }
+  }
   .lg\:border-none {
     @media (width >= 64rem) {
       --tw-border-style: none;
