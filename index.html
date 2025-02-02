@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./styles/output.css" />
   </head>
-  <body>
+  <body class="font-sora font-normal">
     <header class="bg-linear-180 from-primary to-secondary">
       <!-- Navbar Start -->
       <nav
@@ -639,6 +639,50 @@
       <!-- Offers Section End -->
     </main>
     <main></main>
-    <footer></footer>
+    <footer>
+      <!-- News Section Start -->
+      <section class="news container mx-auto px-4">
+        <div
+          class="news-container bg-secondary flex flex-col lg:!flex-row items-center gap-6 lg:!gap-32 rounded-2xl sm:!rounded-3xl px-5 py-8 lg:!px-25 lg:!py-13"
+        >
+          <div class="news-image lg:!grow">
+            <img
+              class="mx-auto lg:!w-full"
+              src="./assets/vegetable-busket.png"
+              alt="Vegetable basket"
+            />
+          </div>
+          <div
+            class="news-content text-center lg:!text-left space-y-4 lg:!space-y-7"
+          >
+            <h2
+              class="new-title heading2 lg:!text-text sm:!text-4xl sm:!leading-11"
+            >
+              Get Grocery News!
+            </h2>
+            <p class="news-description paragraph sm:!text-xl sm:!leading-6">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <form
+              class="space-y-4 lg:!space-y-7"
+              action="./example.php"
+              method="post"
+            >
+              <input
+                class="bg-primary w-full max-w-118 p-3 sm:!p-5 rounded-md sm:!rounded-lg text-sm sm:!text-base leading-5"
+                type="email"
+                placeholder="Enter email...."
+              /><br />
+              <input
+                type="submit"
+                class="button-primary sm:!text-xl sm:!leading-6 sm:!px-7 sm:!py-3"
+                value="Subscribe"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- News Section End -->
+    </footer>
   </body>
 </html>
