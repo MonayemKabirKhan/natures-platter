@@ -713,6 +713,9 @@
       max-width: 96rem !important;
     }
   }
+  .\!mx-0 {
+    margin-inline: calc(var(--spacing) * 0) !important;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -3209,6 +3212,11 @@
       @media (width >= 96rem) {
         max-width: 96rem;
       }
+    }
+  }
+  .lg\:\!mx-0 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 0) !important;
     }
   }
   .lg\:\!grid {
