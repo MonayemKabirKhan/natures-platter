@@ -16,16 +16,16 @@
     <header class="bg-linear-180 from-primary to-secondary">
       <!-- Navbar Start -->
       <nav
-        class="container flex justify-between items-center mx-auto mb-12 border-[0.5px] border-solid border-accent p-4 sm:py-6 sm:border-none sm:mb-23"
+        class="lg:container flex justify-between items-center mx-auto mb-12 border-[0.5px] border-solid border-accent p-4 sm:py-6 lg:border-none sm:mb-23"
       >
-        <div class="header-logo w-38 hidden sm:block">
+        <div class="header-logo w-38 hidden lg:block">
           <img
             class="w-full align-middle"
             src="./assets/logo/logo-header.png"
             alt="Logo"
           />
         </div>
-        <ul class="nav-links hidden sm:flex gap-8">
+        <ul class="nav-links hidden lg:flex gap-8">
           <li>
             <a class="link sm:!text-xl sm:!leading-6" href="#">Product</a>
           </li>
@@ -36,7 +36,7 @@
             <a class="link sm:!text-xl sm:!leading-6" href="#">Contact us</a>
           </li>
         </ul>
-        <div class="header-actions hidden sm:flex items-center gap-4">
+        <div class="header-actions hidden lg:flex items-center gap-4">
           <div class="search w-6">
             <img
               class="w-full align-middle"
@@ -62,14 +62,14 @@
             Register
           </button>
         </div>
-        <div class="header-logo w-12 sm:hidden">
+        <div class="header-logo w-12 lg:hidden">
           <img
             class="w-full align-middle"
             src="./assets/logo/logo-without-text.png"
             alt="Logo"
           />
         </div>
-        <div class="menu w-8 sm:hidden">
+        <div class="menu w-8 lg:hidden">
           <img
             class="w-full align-middle"
             src="./assets/icons/hamburger.png"
@@ -195,10 +195,10 @@
           Popular Products
         </h2>
         <div
-          class="products-container container mx-auto flex flex-col sm:!flex-row gap-6"
+          class="products-container container mx-auto flex flex-col lg:!flex-row gap-6"
         >
           <div
-            class="products-card1 h-85 sm:!basis-106 sm:!h-auto bg-[length:auto_224px,_auto] sm:!bg-[length:auto_275px,_auto] bg-no-repeat bg-right-bottom pt-11 pl-7 rounded-lg sm:!pt-13 sm:!pl-8 space-y-5 sm:!space-y-6"
+            class="products-card1 h-85 sm:!basis-106 sm:!h-auto bg-[length:auto_224px,_auto] sm:!bg-[length:auto_275px,_auto] bg-no-repeat bg-right-bottom pt-11 pl-7 rounded-lg sm:!rounded-xl sm:!pt-13 sm:!pl-8 space-y-5 sm:!space-y-6"
             style="
               background-image: url('../assets/vegetable-offer.png'),
                 linear-gradient(to right bottom, #179800, #efebe3);
@@ -568,6 +568,75 @@
         </div>
       </section>
       <!-- Products Section End -->
+      <!-- Offers Section Start -->
+      <section class="offers container mx-auto px-4 pt-12 sm:!pt-35">
+        <h2
+          class="offers-title heading2 sm:!text-4xl sm:!leading-11 mb-8 sm:!mb-12"
+        >
+          Arrival & Offers
+        </h2>
+        <div
+          class="offers-container flex flex-col gap-4 xl:!gap-5 xl:!flex-row"
+        >
+          <div
+            class="card bg-[#115414] lg:!grow-3 lg:!basis-0 flex items-center rounded-xl sm:!rounded-3xl py-4 sm:!py-8"
+          >
+            <div
+              class="card-content grow basis-48 pl-5 sm:!pl-10 space-y-4 sm:!space-y-8"
+            >
+              <img
+                class="w-28 sm:!w-61"
+                src="./assets/dawat-logo.png"
+                alt="Dawat logo"
+              />
+              <button
+                class="button-quaternary !bg-[#63B76D] !border-[#63B76D] sm:!text-2xl sm:!leading-9 sm:!px-8 sm:!py-4"
+              >
+                Cook Exotic Dishes
+              </button>
+              <h3 class="card4-heading sm:!text-[40px] sm:!leading-12">
+                UP to <span class="font-bold">20% OFF</span>
+              </h3>
+            </div>
+            <div class="card-image grow basis-40">
+              <img
+                class="w-full align-middle transform-[translateY(5%)]"
+                src="./assets/dawat-mock-up.png"
+                alt="Dawat Biriyani"
+              />
+            </div>
+          </div>
+          <div
+            class="card bg-[#102861] lg:!grow-2 lg:!basis-0 flex items-center rounded-xl sm:!rounded-3xl py-4 sm:!py-8"
+          >
+            <div
+              class="card-content grow lg:!grow-5 basis-48 pl-5 sm:!pl-10 space-y-4 sm:!space-y-8"
+            >
+              <img
+                class="h-17 sm:!h-31 mb-0.5 sm:!mb-1"
+                src="./assets/india-gate-logo.png"
+                alt="India gate logo"
+              />
+              <button
+                class="button-quaternary !bg-[#2A4D97] !border-[#2A4D97] sm:!text-2xl sm:!leading-9 sm:!px-8 sm:!py-4"
+              >
+                World’s No.1 Rice
+              </button>
+              <h3 class="card4-heading sm:!text-[40px] sm:!leading-12">
+                UP to <span class="font-bold">40% OFF</span>
+              </h3>
+            </div>
+            <div class="card-image grow lg:!grow-2 basis-40 lg:!basis-44">
+              <img
+                class="w-3/5 lg:!w-full lg:!pr-4 relative left-1/2 transform-[translateX(-50%)_translateY(8%)] align-middle"
+                src="./assets/india-gate-mock-up.png"
+                alt="India gate rice"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Offers Section End -->
     </main>
     <main></main>
     <footer></footer>
