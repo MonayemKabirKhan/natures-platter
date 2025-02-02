@@ -9,6 +9,24 @@
   --color-secondary: #efebe3;
   --color-accent: #179800;
   --color-text: #111111;
+
+  /* Animations */
+  --animate-heading: heading 10s linear infinite;
+  @keyframes heading {
+    0%,
+    100% {
+      color: var(--color-accent);
+    }
+    25% {
+      color: #ebdb34;
+    }
+    50% {
+      color: red;
+    }
+    75% {
+      color: purple;
+    }
+  }
 }
 
 /* Headings */
