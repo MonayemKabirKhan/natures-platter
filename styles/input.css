@@ -65,19 +65,19 @@
 
 /* Buttons */
 .button-primary {
-  @apply text-primary font-sora text-sm font-normal leading-[18px] bg-accent px-6 py-2 border border-solid border-accent rounded-md;
+  @apply text-primary cursor-pointer font-sora text-sm font-normal leading-[18px] bg-accent px-6 py-2 border border-solid border-accent rounded-md;
 }
 
 .button-secondary {
-  @apply text-accent font-sora text-sm font-normal leading-[18px] bg-none px-6 py-2 border border-solid border-accent rounded-md;
+  @apply text-accent cursor-pointer font-sora text-sm font-normal leading-[18px] bg-none px-6 py-2 border border-solid border-accent rounded-md;
 }
 
 .button-tertiary {
-  @apply text-text font-sora text-sm font-normal leading-[18px] bg-primary px-6 py-2 border border-solid border-primary rounded-md;
+  @apply text-text cursor-pointer font-sora text-sm font-normal leading-[18px] bg-primary px-6 py-2 border border-solid border-primary rounded-md;
 }
 
 .button-quaternary {
-  @apply text-primary font-sora text-sm font-normal leading-[18px] bg-accent px-4 py-2 border border-solid border-accent rounded-md;
+  @apply text-primary cursor-pointer font-sora text-sm font-normal leading-[18px] bg-accent px-4 py-2 border border-solid border-accent rounded-md;
 }
 
 /* Links */
